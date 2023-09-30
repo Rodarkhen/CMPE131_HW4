@@ -1,0 +1,5 @@
+The first use would be the reusability, which allows the programmer to reuse the common
+code and to inherit the methods and properties to the chlid class from the base class.
+The second use would be the maintability, which allows to makes general changes in a common behavior
+or attribute shared by many classes at once, reducing the risk of introducing errors and ensuring
+consistency across the classes.
