@@ -15,7 +15,8 @@ def sort_dictionary(input_dict):
     sorted_list = [(name, values[0]) for name, values in items]
 
     return sorted_list
-
+'''
 myDict = {'Tom': (5464512,24), 'Sara' : (5446987, 32), 'Mary': (1557896,20)}
 sorted_dict = sort_dictionary(myDict)
 print(sorted_dict)
+'''

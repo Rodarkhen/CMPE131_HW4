@@ -5,6 +5,7 @@ def timestamp(func):
         print(time.ctime())
         func()
     return wrapper
+
 '''
 @timestamp
 def hi():
