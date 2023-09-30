@@ -4,7 +4,7 @@ class Base:
         self.x = x
         self.y = y
         self.size = size
-        
+    
 class Circle(Base):
     def __init__(self, x, size):
         y = x

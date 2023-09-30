@@ -1,0 +1,6 @@
+1. It does NOT change the variable a after the function call.
+2. It changes the variable b after the function call.
+3. They differs because, in Python, integers are immutable and are passed by value, which copies 
+the value and dictionary are mutable data type and are passed by reference, which any changes is 
+made to the dictionary is going to affect the variable itself.
+
