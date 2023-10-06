@@ -5,7 +5,7 @@ def merge_list(list1, list2):
     
      # Check if the elements of new_list are all integers
     if not all(isinstance(item, int) for item in new_list):
-        raise ValueError("The list contains non-integer values")
+        raise TypeError("The list contains non-integer values")
     
     for i in range(len(new_list)):
         smallest_idx = i
