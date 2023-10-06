@@ -1,6 +1,13 @@
 def merge_list(list1, list2):
-    if not all(isinstance(item, int) for item in list1) or not all(isinstance(item, int) for item in list2):
-        raise TypeError("All elements in both input lists must be integers")
+    # Check for invalid elements in list1
+    for item in list1:
+        if not isinstance(item, int):
+            raise TypeError("All elements in list1 must be integers")
+
+    # Check for invalid elements in list2
+    for item in list2:
+        if not isinstance(item, int):
+            raise TypeError("All elements in list2 must be integers")
 
     new_list = []
     new_list.extend(list1)
