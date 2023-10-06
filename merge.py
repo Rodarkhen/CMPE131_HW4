@@ -1,11 +1,11 @@
 def merge_list(list1, list2):
-    if not isinstance(list1, list) or not isinstance(list2, list):
-        raise TypeError("Both inputs must be lists")
-    
+    if not all(isinstance(item, int) for item in list1) or not all(isinstance(item, int) for item in list2):
+        raise TypeError("All elements in both input lists must be integers")
+
     new_list = []
     new_list.extend(list1)
     new_list.extend(list2)
-   
+
     for i in range(len(new_list)):
         smallest_idx = i
         for j in range(i + 1, len(new_list)):
@@ -13,6 +13,7 @@ def merge_list(list1, list2):
                 smallest_idx = j
         new_list[i], new_list[smallest_idx] = new_list[smallest_idx], new_list[i]
     return new_list
+
 
 '''
 list1 = [1,5,9,11]
