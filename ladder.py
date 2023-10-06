@@ -18,12 +18,3 @@ def my_steps(n):
         steps[i] = steps[i - 1] + steps[i - 2]
     
     return steps[n]
-
-'''
-n = int(input("Enter the number of steps on the ladder (1 ≤ n ≤ 25): "))
-while n < 1:
-  print("Invalid value!")
-  n = int(input("Enter the number of steps on the ladder (1 ≤ n ≤ 25): "))
-print(my_steps(n))
-'''
-      
