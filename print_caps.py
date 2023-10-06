@@ -1,6 +1,7 @@
 def allcaps(func):
     def wrapper():
-        print(func().upper())
+        definedFunc = func()
+        print(definedFunc.upper())
     return wrapper
 '''
 @allcaps

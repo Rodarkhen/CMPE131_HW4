@@ -6,18 +6,17 @@ class Base:
         self.size = size
     
 class Circle(Base):
-    def __init__(self, x, size):
-        y = x
+    def __init__(self, x, y, size):
         super().__init__(x, y, size)
         '''self.x = x
         self.y = y
         self.size = size'''
         
     def shape(self):
-        print("This is a circle")
+        return "This is a circle"
         
     def draw(self):
-        print(f"""({self.x}, {self.y}) 
+        return f"""({self.x}, {self.y}) 
 {self.size}
             , - ~ ~ ~ - ,
         , '               ' ,
@@ -30,10 +29,11 @@ class Circle(Base):
       ,                      ,
         ,                 , '
           ' - , _ _ _ , '
-                 """)
+                 """
 def main():
-    s = Circle(2,1)
-    s.shape()
-    s.draw()
+    c = Circle(1,2,3)
+    print(c.shape())
+    print(c.draw())
+
     
 main()
