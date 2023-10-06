@@ -1,4 +1,8 @@
 def merge_list(list1, list2):
+    # Check if both inputs are lists
+    if not (isinstance(list1, list) and isinstance(list2, list)):
+        raise TypeError("Both inputs must be lists")
+    
     # Check for invalid elements in list1
     for item in list1:
         if not isinstance(item, int):
