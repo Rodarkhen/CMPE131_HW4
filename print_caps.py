@@ -12,16 +12,17 @@ def allcaps(func):
         for word in words:
             capitalized_word = word.upper()
             capitalized_result += capitalized_word + " "
-
+            
+        # Remove the trailing space
+        capitalized_result = capitalized_result.strip()
         
         print(capitalized_result)
-    
     # Return the wrapper function
     return wrapper
 '''
 @allcaps
 def greet():
-    return "hello World!"
+    return "Hello World"
 
 def main():
     greet()
