@@ -8,10 +8,10 @@ def allcaps(func):
         # Iterate through each word and make it uppercase, then add it to the result string.
         # for i, word in enumerate(words):
             # print(word.upper(), end=' ' if i < len(words) - 1 else '')
-
+        return result.upper()
     # Return the wrapper function
     return wrapper
-
+'''
 @allcaps
 def greet():
     return "Hello World!"
@@ -20,3 +20,4 @@ def main():
     greet()
     
 main()
+'''
