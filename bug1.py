@@ -4,7 +4,7 @@ class Base:
         self.x = x
         self.y = y
         self.size = size
-
+    
 class Circle(Base):
     Shape = "circle"
     def __init__(self, x, y, size):
